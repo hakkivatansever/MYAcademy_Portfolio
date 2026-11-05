@@ -168,6 +168,35 @@ namespace MYAcademy_Portfolio.Migrations
                     b.ToTable("Experiences");
                 });
 
+            modelBuilder.Entity("MYAcademy_Portfolio.Entities.HeroSection", b =>
+                {
+                    b.Property<int>("HeroSectionId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("HeroSectionId"));
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("SubTitle")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("HeroSectionId");
+
+                    b.ToTable("HeroSections");
+                });
+
             modelBuilder.Entity("MYAcademy_Portfolio.Entities.Message", b =>
                 {
                     b.Property<int>("MessageId")

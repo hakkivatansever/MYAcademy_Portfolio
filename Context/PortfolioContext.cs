@@ -18,6 +18,8 @@ namespace MYAcademy_Portfolio.Context
 
         public DbSet<Contact> Contacts { get; set; }
 
+        public DbSet<HeroSection> HeroSections { get; set; }
+
 
 
     }
