@@ -20,7 +20,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Views\Default\" />
+    <Folder Include="ViewComponents\AdminViewComponents\" />
+    <Folder Include="ViewComponents\StatisticsViewComponents\" />
+    <Folder Include="Views\Shared\Components\" />
   </ItemGroup>
 
 </Project>
